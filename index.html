@@ -12,6 +12,8 @@
 
 <body>
     <main id="main">
+        <input type="checkbox" onchange="handleThemeChange()">
+        <span>Dark Mode</span>
         <img alt="Moscow" title="Moscow" width="100%" height="100%"
             src="https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/russia/moscow/destinations-moscow-banner-mobile-1024x553.jpg">
         <div>
@@ -191,6 +193,21 @@
         <div class="footerItem">contact</div>
         <div class="footerItem">privacy and policy</div>
     </footer>
+    <script>
+        const darkBackground = '#212121';
+        const darkTextColor = '#f5f5f5';
+        let theme = 'light';
+        const tagNames = ['p', 'h', 'td', 'th', 'span', 'small', 'blockqoute'];
+        function handleThemeChange() {
+            if (theme === 'light') {
+                document.body.classList.add('darkModeBody');
+                theme = 'dark';
+            } else {
+                document.body.classList.remove('darkModeBody');
+                theme = 'light';
+            }
+        }
+    </script>
 </body>
 
 </html>
