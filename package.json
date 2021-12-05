@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/BadieTahghighi/Badie-Tahghighi/issues"
   },
-  "homepage": "https://github.com/BadieTahghighi/Badie-Tahghighi#readme",
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "moment": "^2.29.1"
-  }
+  "homepage": "https://github.com/BadieTahghighi/Badie-Tahghighi#readme"
 }
